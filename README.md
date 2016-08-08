@@ -7,7 +7,7 @@
 - **ArgumentParser** class parses arguments given by user to check if the user has given phone number file or dictionary file as input.
 - **DataLoader** class loads dictionary and phone number data. Loads dictionary file given by user,if not, loads default dictionary. Loads phone numbers file if given by user,otherwise reads from console.
 - **Dictionary** - Given a set of words and number encoding, it loads the inverted index (number to words mapping) of words, and uses this index to provide a set of dictionary words for any number.
-- **PhoneToWordConverter** - Given a loaded dictionary, finds all possible matched phrases/words for a given phone number. This is the logic that it uses.
+- **PhoneToWordConverter** - Given a loaded dictionary, finds all possible matched phrases/words for a given phone number. The logic that it uses, is explained below.
 - **Orchestrator** - Class which triggers the entire flow - parsing arguments, loading data, loading inverted index of dictionary, converting the phone numbers to words, and displaying the results.
 
 ## Logic
